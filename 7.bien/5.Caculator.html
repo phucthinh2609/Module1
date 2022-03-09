@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Caculator</h1> 
+
+    <input type="text" name="" id="id1" value="12" style="width: 150px;">
+    <input type="text" name="" id="id2" value="12" style="width: 150px;">
+    <br><br>
+
+    <button type="button" onclick="Add()" style="font-size: 10px; background-color:#eeeee4 ;">Addition(+)</button>
+    <button type="button" onclick="Sub()" style="font-size: 10px; background-color:#eeeee4 ;">Subtraction(-)</button>
+    <button type="button" onclick="Mul()" style="font-size: 10px; background-color:#eeeee4 ;">Multiplication(X)</button>
+    <button type="button" onclick="Div()" style="font-size: 10px; background-color:#eeeee4 ;">Division(/)</button>
+    <p id="idresult">Result Division:  </p>
+    <br><br>
+
+</body>
+</html>
+<script>
+    
+    var a = parseInt(document.getElementById("id1").value);
+    var b = parseInt(document.getElementById("id2").value);
+
+    console.log(a + b);
+    var add = a + b;
+    var sub = a - b;
+    var mul = a * b;
+    var div = a / b;
+
+
+    function Add() {
+        document.getElementById("idresult").innerHTML=("Result Division:  " + add);
+    }
+
+    function Sub() {
+        document.getElementById("idresult").innerHTML=("Result Division:  " + sub);
+    }
+
+    function Mul() {
+        document.getElementById("idresult").innerHTML=("Result Division:  " + mul);
+    }
+
+    function Div() {
+        document.getElementById("idresult").innerHTML=("Result Division:  " + div);
+    }
+
+    
+</script>
