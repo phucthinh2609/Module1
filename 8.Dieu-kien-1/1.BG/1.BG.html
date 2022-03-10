@@ -154,28 +154,46 @@
 
     //-------------------------------
 
-    /* BG2-TH-swich-case_Vd1 */ 
+    /* BG3-TH-swich-case_Vd1 */ 
 
-    var a = prompt("Gia tri a la:  ");
-    var b = prompt("Gia tri a la:  ");
-    var opera= prompt("Nhap phep toan (+,-,*,/) :  ");
+    // var a = parseInt(prompt("Gia tri a la:  "));
+    // var b = parseInt(prompt("Gia tri b la:  "));
+    // var opera= prompt("Nhap phep toan (+,-,*,/) :  ");
 
-    switch (opera) {
-        case "+":
-            alert("a + b = " + (a+b));
-            break;
-        case "-":
-            alert("a - b = " + (a-b));
-            break;
-        case "*":
-            alert("a * b = " + (a*b));
-            break;
-        case "/":
-            alert("a / b = " + (a/b));
-            break;
-        default:
-            alert("Khong co phep toan");
-            break;
+    // switch (opera) {
+    //     case "+":
+    //         alert("a + b = " + (a+b));
+    //         break;
+    //     case "-":
+    //         alert("a - b = " + (a-b));
+    //         break;
+    //     case "*":
+    //         alert("a * b = " + (a*b));
+    //         break;
+    //     case "/":
+    //         alert("a / b = " + (a/b));
+    //         break;
+    //     default:
+    //         alert("Khong co phep toan");
+    //         break;
+    // }
+
+    //-------------------------------
+
+    /* BG3-TH-swich-case_Vd2 */ 
+
+    var a = 100;
+    var b = 200;
+
+    switch (a) {
+        case 100:
+            alert("a =  " +a);
+        switch (b) {
+            case 200:
+                alert("b =  "+b);
+        }
     }
+
+
 
 </script>

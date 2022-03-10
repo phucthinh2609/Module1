@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+    // let y = parseInt(prompt("Nhập năm :  "));
+    // let a= y + ": Là năm nhuận.";
+    // let b = y + ": Không phải là năm nhuận.";
+
+    // if (y%4 ==0) {
+    //     if (y%100 ==0) {
+    //         if (y%400 ==0) {
+    //             alert(a);
+    //         }else{
+    //             alert(b);
+    //         }
+    //     }else{
+    //         alert(a);
+    //     }
+    // }else{
+    //     alert(b);
+    // }
+
+    let isLeapYear = false;
+    let year = parseInt(prompt("Nhập năm:  "));
+
+    let isDivisibleBy4 = year%4 ==0;
+    if (isDivisibleBy4) {
+        let isDivisibleBy100 = year%100 ==0;
+        if (isDivisibleBy100) {
+            let isDevisibleBy400 = year%400 ==0;
+            isLeapYear = true;
+        }else{
+            isLeapYear = true;
+        }
+    }
+
+    if (isLeapYear) {
+        alert(year + "- là năm nhuận");
+    }else{
+        alert(year + "- không phải là năm nhuận");
+    }
+
+</script>
