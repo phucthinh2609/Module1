@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script>
+        // alert("Created website");
+        // var b = prompt("Insert data");
+        // console.log("Data's B:  ", b);
+    </script> -->
+    
+    <script src="js.js"></script>
+
+</head>
+<body>
+    <!-- <button type="button" onclick="alert('Please click on login button')">Submit</button>
+    <button type="button" onclick="alert ('Thinh is so Handsome')">Thinh</button> -->
+    
+    <!-- <button type="button" onclick="showMessage()">Click Me!</button>
+    <script>
+        function showMesaage(){
+        console.log('xinchao'); -->
+    
+    <!-- </script> -->
+
+    <!-- <script>
+        var x = prompt('Place 1 : ');
+        var y = prompt('Place 2 : ');
+    </script> -->
+
+    <h1>Caculator</h1>
+    <input type="text" value="12" id="idA">
+    <input type="text" value="12" id="idB"> <br>
+    <button type="button" onclick="Howtotal()">Addition(+)</button> 
+    <button type="button" onclick="Howsubtraction()">Addition(-)</button> <br><br>
+
+</body>
+    <script>
+
+
+        function Howtotal(){
+            var a =  document.getElementById("idA").value;
+            var b =  document.getElementById("idB").value;
+            console.log("Gia tri a",a);
+            console.log("Gia tri b",b);
+            var total = parseInt(a)+parseInt(b);
+            alert("Total = "+total); 
+        }
+
+        function Howsubtraction(){
+            var a =  document.getElementById("idA").value;
+            var b =  document.getElementById("idB").value;
+            console.log("Gia tri a",a);
+            console.log("Gia tri b",b);
+            var sub = parseInt(a)-parseInt(b);
+            alert("Subtration = "+sub) 
+        }
+        
+        document.write("Total = "+total);
+
+    </script>
+</html>

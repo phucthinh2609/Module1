@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p onmouseover="mouseover()" onmouseout="mouseout()" id="mo">This is a text</p>
+</body>
+</html>
+<script>
+    
+    function mouseover() {
+        document.getElementById('mo').style.color="red";
+    }
+
+    function mouseout()  {
+        document.getElementById('mo').style.color="black";
+    }
+</script>

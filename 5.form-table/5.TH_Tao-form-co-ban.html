@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="wufoo">
+
+    <form method="GET" action="simpleform.html">
+        <h1>Oder Form</h1> 
+        <p>What would you like to buy?</p>
+        <select name="like">
+            <option value="a">A</option>
+            <option value="c">B</option>
+            <option value="c">C</option> 
+        </select> <br><br>
+        <p>How many would you like to order?</p>
+        <input type="radio" name="order" value="1 - $10">1 - $10 <br>
+        <input type="radio" name="order" value="2 - $20">2 - $20 <br>
+        <input type="radio" name="order" value="3 - $25">3 - $25 <br><br>
+        
+        <p>Name <span style="color: red;">*</span></p>
+        <input type="text" name="firstname" placeholder="FirstName" size="15"/> 
+        <input type="text" name="lastname" placeholder="LastName" size="20">
+        
+        <p>Email</p> 
+        <input type="text" name="mail" size="38"> <br><br>
+        
+        <p>Phone Number</p> 
+        <input type="text" name="phone1" size="6"> - <input type="text" name="phone2" size="6"> - <input type="text" name="phone3" size="6"> <br><br>
+        <input type="submit" value="Submit">
+
+        <style>
+            .wufoo{
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+        </style>
+        <method="GET" action="simpleform.html" class="wufoo">
+    </form>
+    
+</body>
+</html>
