@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // alert('Cung giai phuong trinh bac 2 "ax^2+bx+c=0"');
+    
+    let a = parseInt(prompt("Nhap gia tri a (a#0): "));
+    let b = parseInt(prompt("Nhap gia tri b: "));
+    let c = parseInt(prompt("Nhap gia tri c: "));
+    
+    
+    let delta = Math.pow(b,2) - 4*a*c;
+    let x1 = (-b + Math.sqrt(delta, 2))/(2*a);
+    let x2 = (-b - Math.sqrt(delta, 2))/(2*a);
+    
+
+    if (delta < 0) {
+        alert('Phuong trinh vo nghiem');
+    }else if (delta == 0) {
+        alert('Phuong trinh co nghiem kep la: x1 = x2 =  ' + (-(b/(2*a))));
+    }else if (delta > 0) {
+        alert('Phuong trinh co nghiem x1 la:  ' + x1 + "Phuong trinh co nghiem x2 la:  " + x2);
+    }
+
+</script>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Do you love me?</h2>
+    <button type="button" onclick="alert('I love u, too!')">Yes</button>
+    <button type="button" id="idNo" style="position: absolute; left: 70px;" onmouseover="chay()">No</button>
+</body>
+</html>
+<script>
+    function chay() {
+        x = Math.round(Math.random() * window.innerWidth);
+        y = Math.round(Math.random() * window.innerHeight);
+        document.getElementById('idNo').style.right = x + "px";
+        document.getElementById('idNo').style.top = y + "px";
+    }
+</script>

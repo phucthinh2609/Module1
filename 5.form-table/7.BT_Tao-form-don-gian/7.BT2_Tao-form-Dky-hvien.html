@@ -8,8 +8,15 @@
     <link rel="stylesheet" href="./7.BT2_Tao-form-Dky-hvien.css">
 </head>
 <body>
+    <div class="controls">
     <fieldset style="background-color: #fef9aa;" width="300px" hight="800px">
-        <head>DANG KY</head>
+        <form style="font-family: Arial, Helvetica, sans-serif">
+        <table>
+            <tr>
+                <th style="background-color:rgba(127, 255, 249, 0.808); padding: 5px 10px;"><head style="color: rgb(0, 98, 255);">ĐĂNG KÝ HỌC VIÊN</head></th>
+            </tr>
+        </table>
+        <br>
         <table>
             <tr>
                 <td style="color: blue;">Họ và tên</td>
@@ -18,48 +25,57 @@
                 </td>
             </tr>   
             <tr>
-                <td>Ngày sinh</td>
+                <td style="color: blue;">Ngày sinh</td>
                 <td>
                     <input type="text" name="" id="" style="width: 100px;">
                 </td>
             </tr>
             <tr>
-                <td> style="color: blue;">Giới tính</td>
+                <td style="color: blue;">Giới tính</td>
                 <td>
-                    <input type="text">
+                    <input type="radio" value="sex"> Name
+                    <input type="radio" value="sex"> Nữ
                 </td>
             </tr>
             <tr>
-                <td style="color: blue;">Địa chỉ</td>
-                <td>a</td>
+                <td style="color: blue; text-align: start;">Địa chỉ</td>
+                <td>
+                    <textarea name="" id="" cols="20" rows="5"></textarea>
+                </td>
             </tr>
             <tr>
                 <td style="color: blue;">Lớp</td>
-                <td>a</td>
-            </tr>
-            <tr>
-                <td style="color: blue;">Lớp</td>
-                <td>a</td>
+                <td>
+                    <select >
+    
+                        <option value="lop"size='padding: 50px 50px'>-Chọn lớp-</option>
+                        <option value="lop">Lớp 10</option>
+                        <option value="lop">Lớp 11</option>
+                        <option value="lop">Lớp 12</option>
+                    </select>
+                </td>
             </tr>
             <tr>
                 <td style="color: blue;">Email</td>
-                <td>a</td>
+                <td>
+                    <input type="text" name="" id="" style="width: 100px;">
+                </td>
             </tr>
             <tr>
                 <td style="color: blue;">Điện thoại</td>
-                <td>a</td>
+                <td>
+                    <input type="text" name="" id="" style="width: 100px;">
+                </td>
             </tr>
             <tr>
                 <td></td>
                 <td>
-                    <button></button>
-                    <button></button>
+                    <input type="submit" value="Đăng ký" style="width: 80px;">
+                    <input type="reset" value="Nhập lại" style="width: 80px">
                 </td>
             </tr>
-
         </table>
-       
-
+        </form>
     </fieldset>
 </body>
 </html>
