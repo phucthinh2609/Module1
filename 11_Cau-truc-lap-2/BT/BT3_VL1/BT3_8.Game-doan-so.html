@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="play()">CHƠI</button>
+
+    
+</body>
+</html>
+<script>
+    let guess,
+        result,
+        min,
+        max;
+    
+    function play() {
+        min = parseInt(prompt ('Enter min:  '));
+        max = parseInt(prompt ('Enter max:  '));
+        result = Math.floor(Math.random()* (max - min +1))+ min;
+        guess = prompt ('Enter a guess nubmber:  ');
+
+        for (i = 0; i<3; i++) {
+        if (guess == result) {
+            alert ('YOU WIN!!!');
+            alert ('Do you wanna play again?')
+            break;
+        } 
+        if (guess !== result) {
+            alert ('WRONG!!!');
+            guess = prompt ('TRY AGAIN'); 
+        } 
+        } alert ('Over turns. Click "CHƠI" button again');
+        }
+    
+
+</script>

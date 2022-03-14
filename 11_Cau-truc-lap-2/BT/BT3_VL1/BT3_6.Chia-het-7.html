@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let n1 = 0,
+        n2 = 1,
+        count= 0,
+        total = 0,
+        nextTerm;
+
+    for (i = 0; i<100000; i++) {
+        console.log(n1);
+        nextTerm = n1 + n2;
+        n1 = n2;
+        n2 = nextTerm;
+        if (n1 %7 ==0) {
+            total += n1
+            count += 1
+            if (count>=30){
+            break;  
+            }
+        }
+    }
+    console.log('Total of Divisible By 7 = '+ total);
+        
+
+</script>
