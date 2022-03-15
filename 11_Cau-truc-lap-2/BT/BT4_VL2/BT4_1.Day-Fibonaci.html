@@ -13,18 +13,12 @@
 <script>
     let n1 = 0,
         n2 = 1,
-        nextTerm,
-        tam;
+        nextTerm;
 
-    for (i=0; i<20; i++){
-        console.log(n1);
+    for (i = 0; i<10; i++) {
+        console.log (n1)
         nextTerm = n1 + n2;
         n1 = n2;
         n2 = nextTerm;
-        if (n1%5==0) {
-            console.log (n1+ ' là chia hết cho 5.')
-            break;
-        }
     }
-    
 </script>
