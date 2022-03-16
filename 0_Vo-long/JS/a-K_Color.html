@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB</title>
+    <style>
+        table{
+            border: 1px solid black;
+        }
+        td {
+            text-align: center;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table id="idRGBA">
+        <tbody>
+            <tr>
+                <td colspan="4" id="show_value">
+                    rgba(255,23,5,50)
+                </td>
+            </tr>
+            <tr>
+                <td>Red</td>
+                <td>Green</td>
+                <td>Bule</td>
+                <td>Alpha</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="range" id="range_red" min="0" max="255"oninput='changeColor()'>
+                </td>
+                <td>
+                    <input type="range" id="range_green" min="0" max="255"oninput='changeColor()'>
+                </td>
+                <td>
+                    <input type="range" id="range_blue" min="0" max="255"oninput='changeColor()'>
+                </td>
+                <td>
+                    <input type="range" id="range_alpha" min="0" max="100"oninput='changeColor()'>
+                </td>
+    
+            </tr>
+            <tr>
+                <td class="color_value">255</td>
+                <td class="color_value">255</td>
+                <td class="color_value">255</td>
+                <td class="color_value">255</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function changeColor() {
+            let range_red = document.getElementById('range_red').value;
+            let range_green = document.getElementById('range_green').value;
+            let range_blue = document.getElementById('range_blue').value;
+            let range_alpha = document.getElementById('range_alpha').value; 
+            
+            let color_value = document.getElementById('color_value')
+
+            color_value[0].innerHTML = range_red;
+            color_value[1].innerHTML = range_green;
+            color_value[2].innerHTML = range_blue;
+            color_value[3].innerHTML = range_alpha;
+
+            let show_value = `rgba(${range_red},${range_green},${range_blue},${range_alpha})`
+
+            document.getElementById("show_value").innerText = show_value
+            document.getElementById("show_value").style.backgroundColor = show_value
+            
+            
+        }
+    </script>
+</body>
+</html>
