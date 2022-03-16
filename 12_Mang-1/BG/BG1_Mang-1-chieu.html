@@ -11,9 +11,13 @@
 </body>
 </html>
 <script>
-    let x = 1;
-    for (let i = 0; i < -1; i = i + 2) {
-    x = x + 1;
+    var array = ["item1", "item2", "item3"];
+
+    for (let i = 0; i<array.length; i++) {
+        console.log('Index = '+ i +' + __value = '+ array[i]);
     }
-console.log(x);
+
+    var firstValue = array[0];
+        console.log(firstValue)
+    
 </script>
