@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, td {
+            border: 1px solid black;
+            position: relative;
+            
+        }
+     
+    </style>
+</head>
+<body>
+    <table id="idTable"></table>
+</body>
+</html>
+<script>
+    let tb = '';
+    for (i = 2; i<10; i++) {
+        tb += '<tr>';
+        for (j = 1; j<=10; j++) { 
+            tb += ('<td>'+ i + 'x' + j + ' = ' + i*j + '</td>')
+        }
+        tb += '</tr>'
+    }
+
+    document.getElementById('idTable').innerHTML = tb
+        
+</script>
