@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td></td>
+            <th id="idP"; style="background-color: rgb(243, 132, 29); font-size: 30px; padding: 20px; font-family:'Courier New', Courier, monospace; color: white; text-shadow:2px 2px rgb(149, 76, 8) ;" >rgb(255,255,255)</th>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 10px;"></td>
+        </tr>
+        <tr>
+            <th >Red</th>
+            <th>Green</th>
+            <th>Blue</th>
+        </tr>
+        <tr>
+            <td><input type="range" min="0" max="255" id="idRed" onchange="changeColour()"></td>
+            <td><input type="range" min="0" max="255" id="idGreen" onchange="changeColour()"></td>
+            <td><input type="range" min="0" max="255" id= "idBlue" onchange="changeColour()"></td>
+        </tr>
+        <tr>
+            <td id="idRedCode">255</td>
+            <td id="idGreenCode">255</td>
+            <td id="idBlueCode">255</td>
+        </tr>
+    </table>
+    <script>
+        function changeColour() {
+            var r = document.getElementById('idRed').value;
+            var g = document.getElementById('idGreen').value;
+            var b = document.getElementById('idBlue').value;
+            var colour = 'rgb(' + r + ',' + g + ',' + b + ')'
+
+            document.getElementById('idRedCode').innerText = r;
+            document.getElementById('idGreenCode').innerText = g;
+            document.getElementById('idBlueCode').innerText = b;
+
+            document.getElementById('idP').innerText = colour;
+             
+            document.getElementById('idP').style.backgroundColor = colour;
+        }
+    </script>
+</body>
+</html>

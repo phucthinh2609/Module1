@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button 
+        onmouseover="this.innerText = new Date()"
+        onmouseout="this.innerText = 'Hover me to show the time'"
+    >Hover me to show the time</button>
+    <br> -->
+
+    <button>Hover me to show tghe </button>
+
+    <button
+        onmouseover="document.getElementsByTagName('p')[0].innerText = new Date()"
+    >Hover to me and current time on p element</button>
+    <br>
+    <p></p>
+
+    <input type="range" oninput="document.getElementsByTagName('p')[0].innerText = this.value">
+    <br>
+    <input type="color" oninput="
+                                document.body.style.backgroundColor = this.value 
+    ">
+
+    <!-- <br>
+    Password <input type="password" 
+                    onchange="document.getElementById('spw').value = this.value">
+    <br>
+    Show password <input type="text" id="spw"> -->
+
+    <!-- <br>
+    Password <input type="password" class = 'pw' >
+    <br>
+    <button
+            onclick="document.getElementsByClassName('pw')[0].type='text'"
+    >Show password</button> -->
+
+    <br>
+    Password <input type="password" class = 'pw' >
+    <br>
+    <!-- <button name="btn" onclick="showHidePW()">Show password</button> -->
+
+    <button name="btn">Show password</button>
+
+    <script>
+        document.addEventListener
+        document.getElementsByName('btn')[0].addEventListener ('click',showHidePW);
+        function showHidePW() {
+            let pw = document.getElementByClass('pw')[0];
+            let btn = document.getElementsByName('btn')[0];
+            if (pw.type === "password") {
+                pw.type === 'text'
+                btn.innerText = 'Hide Password'
+        }else {
+            pw.type === 'password'
+            btn.innerText = 'Show Password'
+        }
+    </script>
+
+</body>
+</html>
