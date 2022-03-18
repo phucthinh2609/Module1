@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=  , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    var str = prompt('Please enter a text string:  ');
+    const UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const LOWER = 'abcdefghijklmnopqrstuvwxyz';
+    const result = [];
+
+    for (i=0; i<str.length; i++) {
+        if (UPPER.includes(str[i])) {
+            result.push(str[i].toLowerCase());
+        }else if (LOWER.includes(str[i])) {
+            result.push(str[i].toUpperCase())
+        }
+    }
+    console.log(result.join(''));
+</script>
