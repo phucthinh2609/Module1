@@ -11,17 +11,21 @@
 </body>
 </html>
 <script>
-    var str = prompt('Please enter a text string:  ');
+    
+    var str = prompt('Enter a string:  ');
     const UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     const LOWER = 'abcdefghijklmnopqrstuvwxyz';
-    const result = [];
+    const result = [str[0]];
 
     for (i=0; i<str.length; i++) {
         if (UPPER.includes(str[i])) {
             result.push(str[i].toLowerCase());
         }else if (LOWER.includes(str[i])) {
-            result.push(str[i].toUpperCase())
+            result.push(str[i].toUpperCase());
         }
-    }
+    } 
     console.log(result.join(''));
+
 </script>
+
+

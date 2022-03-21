@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+var n = 0;
+    let divBy10 = [];
+    let j=0
+
+    
+
+    for (i=0; i<10; i++) {
+        let n = Math.floor(Math.random()*10000) + 1;
+        if (n%10 ==0) {
+            console.log(n + ' chia het cho 10');
+            n = divBy10[j];
+            j++
+        }
+    }
+    console.log('Tong so chia het cho 10 la: '+j);
+</script>
