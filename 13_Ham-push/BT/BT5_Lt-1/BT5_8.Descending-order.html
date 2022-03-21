@@ -12,15 +12,20 @@
 </html>
 <script>
 
-        var arrs = [];
+        var arrs = [-1, 0, -10, 5, 6];
+
+        // let arrs_sort = arrs.sort();
+        // console.log (arrs_sort);
+
+        // var arrs = [];
     
-        for (j=0; j<10; j++) {
-            let input = Number(prompt('Enter a string '+ j +': '));
-            arrs.push(input);
-        }
+        // for (j=0; j<10; j++) {
+        //     let input = Number(prompt('Enter a string '+ j +': '));
+        //     arrs.push(input);
+        // }
       
         function sortNumber(a, b) {
-        return a - b;
+        return b - a;
         }
 
         arrs.sort(sortNumber);
