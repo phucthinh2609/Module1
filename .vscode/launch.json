@@ -1,0 +1,14 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-chrome",
+            "request": "launch",
+            "name": "Open BT5_8.Descending-order.html",
+            "file": "/Users/macbookair/Desktop/Codegym/Module1/13_Ham-push/BT/BT5_Lt-1/BT5_8.Descending-order.html"
+        }
+    ]
+}

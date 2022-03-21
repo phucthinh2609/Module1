@@ -14,15 +14,15 @@
     
     let arrs = [];
     
-    for (j=0; j<2; j++) {
+    for (j=0; j<10; j++) {
         let input = Number(prompt('Enter a string '+ j +': '));
-        arrs.push(input[j]);
+        arrs.push(input);
     }
     
     let arrs1 = [];
     let V_value = Number(prompt('Enter V value:  '));
 
-    for (i=0; i<2; i++) {
+    for (i=0; i<10; i++) {
         if (arrs[i] !== V_value) {
             arrs1.push(arrs[i])
         }else{
