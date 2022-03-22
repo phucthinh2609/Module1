@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Faking Textarea</title>
+</head>
+<body onload="fake()" style="text-align: center;">
+
+    <h2>Faking Textarea</h2>
+    <form>
+        <label>
+            <textarea cols="30" rows="5" id="txt"></textarea>
+        </label>
+    </form>
+
+</body>
+</html>
+<script>
+    let str = "";
+    let array = ['','T', 'Ô', 'I',' ', 
+                 'L', 'À', ' ', 
+                 'M', 'Ộ', 'T', ' ', 
+                 'T', 'H', 'Ằ', 'N', 'G', ' ', 
+                 'N', 'G', 'Ố', 'C', '!',
+     ];
+
+    function fake() {
+        let text = document.getElementById("txt").value;
+        for(let i = 1; i <= text.length; i++) {
+            str = str + array[i];
+            if (i === Number(array.length-1)) {
+                str = "";
+            }
+        }
+        document.getElementById("txt").value = str;
+        str = "";
+        setTimeout("fake()", 1);
+
+    }
+    
+</script>
+

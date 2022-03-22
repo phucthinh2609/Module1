@@ -6,35 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    
+<body onload="fake()" style="text-align: center;">
+    <h2>Falking Textarea</h2>
+    <form>
+        <label>
+            <textarea cols="30" rows="5" id="'txt"></textarea>
+        </label>
+    </form>
 </body>
 </html>
 <script>
-    function find_square_number(n){
-    //flag = 1 => số chính phương
-    //flag = 0 => không phải số chính phương
-    
-    let flag = 0;
 
-    //Tìm số bất kỳ nhỏ hơn hoặc bằng n mà bình phương bằng n
-    let i = 0;
-    while(i <= n){
-        if( Math.pow( i, 2) == n ) {   
-            flag = 1;
-            break; /*Chỉ cần tìm thấy 1 ước số là đủ và thoát vòng lặp*/
+    let str = '';
+    let array = ['','T', 'Ô', 'I',' ', 
+                 'L', 'À', ' ', 
+                 'M', 'Ộ', 'T', ' ', 
+                 'T', 'H', 'Ằ', 'N', 'G', ' ', 
+                 'N', 'G', 'Ố', 'C', '!',
+             ];
+
+    function fake() {
+        let text = document.getElementById('txt').value;
+        for (i = 1; i<text.length; i++) {
+            str += array[i];
+            if (i==Number(array.length - 1)) {
+                str = '';
+            }
         }
-        i++;
+        document.getElementById('txt').value = str;
+        str = '';
+        setTimeout('fake()', 1)
     }
 
-    return flag;
-}
-
-let n= prompt(" nhap mot so tu nhien: ");
-    
-
-let check = find_square_number(n);
-
-if( check == 1 ) console.log(n + " la chinh phuong");
-else console.log(n + " khong phai la so chinh phuong");
 </script>
