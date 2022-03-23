@@ -137,25 +137,43 @@
 //     }
 //     }
 
-    let row = 5;
-    let col = 6;
+    // let row = 5;
+    // let col = 6;
+    // let min = 10;
+    // let max = 80;
+    // // let arr_Row = new Array (row);
+    // // let arr_Col = new Array (col);
+
+    // // let arr = [
+    // //     new Array (),
+    // //     new Array ()
+    // // ]
+    
+
+    // // for (i = 0; i<arr.length; i++) {
+    // //     for (j = 0; j<arr[i].length; j++) {
+    // //         arr[i][j] = Math.floor(Math.random()*(max - min + 1)+min)
+    // //     }
+    // // }
+    // console.log(arr)
+
+    let row = 2;
+    let col = 3;
     let min = 10;
-    let max = 80;
-    // let arr_Row = new Array (row);
-    // let arr_Col = new Array (col);
+    let max = 60;
+    let arr_Row = new Array(row);
 
-    let arr = [
-        [new Array (row)],
-        [new Array (col)]
-    ]
-
-    for (i = 0; i<arr.length; i++) {
-        for (j = 0; j<arr[i].length; j++) {
-            arr[i][j] = Math.floor(Math.random()*(max - min + 1)+min)
+    for (i = 0; i<arr_Row.length; i++) {
+        let arr_Col = new Array(col);
+        for (j = 0; j<arr_Col.length; j++) {
+            arr_Col[j] = Math.floor(Math.random()*(max - min + 1)+ min);
         }
+        arr_Row[i] = arr_Col
     }
-    console.log(arr)
+    console.log (arr_Row)
+
 
 
 
 </script>
+

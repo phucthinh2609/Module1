@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <p onclick = "hello()">Click Me!!</p> -->
+
+    <!-- Square of <input type="text" oninput="caculate()" id="input"> is : <span id="result"></span> -->
+
+</body>
+</html>
+<script>
+
+    // function sum(a,b) {
+    //     return a + b;
+    // }
+
+    //===================
+
+    // var numb1 = 12;
+    // var numb2 = 23;
+
+    // function sum(a, b) {
+    //     var result = a + b;
+    //     return result;
+    // }
+    
+    // var result = sum(numb1, numb2);
+    // console.log(result);
+
+     //===================
+
+    //  function hello() {
+    //      alert ('Hello World')
+    //  }
+
+    //===================
+
+
+//    function sum(a,b) {
+//        return a + b;
+//    }
+
+//    var total = sum(2,3);
+//    alert (total);
+
+    //===================
+
+    // function square(number) {
+    //     var result = number * number;
+    //     return result
+    // }
+
+    // var squareOf2 = square(2);
+    // alert(squareOf2)
+
+    //===================
+
+    // function square(number) {
+    //     var result = number * number;
+    //     return result;
+    // }
+
+    // function caculate() {
+    //     var input = document.getElementById('input').value;
+    //     var result = square(input)
+    //     document.getElementById('result').innerHTML = result;
+    // }
+
+    //===================
+    // ĐỐI SỐ (Arguments)
+
+    // function myFunction () {
+        
+    //     // Truy xuat do dai arguments
+    //     let argLength = arguments.length;
+    //     for (var i = 0; i< argLength; i++) {
+    //         //Xu ly doi so i
+    //     }
+    // }
+
+    //===================
+
+    // function myFunction() {
+    //     let firstArg = arguments[0];
+    //     let secondArg = arguments[1];
+    //     alert ('firstArg is: ' + firstArg);
+    //     alert ('secondArg is: ' + secondArg);
+    // }
+
+    // myFunction("hello", "world");
+
+    //===================
+    // PHẠM VI BIẾN 
+
+    // function addNumber () {
+    //     var firstNum = 4;
+    //     var secondNum = 8;
+    //     var result = firstNum + secondNum;
+    //     // var result = firstNum + secondNum;
+    //     return result;
+    // }
+    // result = 0;
+    // // alert (result);
+    // addNumber();
+    // alert (result);
+
+    //===================
+    // GIÁ TRỊ TRẢ VỀ
+
+    // function multiplyNums (x) {
+    //     var result = x*2;
+    //     return result;
+    // } 
+    // let theNumber = prompt('Enter a multiply number: ');
+    // let result = multiplyNums(theNumber);
+    // alert(result);
+
+    //===================
+
+    // function myFunction (x) {
+    //     if (x == 1) {
+    //         return true;
+    //     }else{
+    //         return false;
+    //     }
+    // }
+
+    // let theNumber = prompt('Enter a number: ');
+    // let result = myFunction(theNumber);
+    // alert(result);
+
+    //===================
+    //Sẽ không thực thi những dòng mã sau 'return'
+
+    // function myFunction() {
+    //     var count = 10;
+    //     var firstNum = 180;
+    //     return;
+    //     var secondNum = 280;  //=> secondNum sẽ bh được thực thi
+    // }
+
+    // let result = myFunction();
+    // document.write(result);
+
+
+     //===================
+    //GOỊ HÀM
+
+    // function oderFruit() {
+    //     let total = 0;
+    //     return total;
+    // }
+
+    // let result = oderFruit;
+    // alert('The total is: '+result);
+
+
+    //===================
+    //TRUYỀN THAM TRỊ (Passing by value of primitives values)
+
+    // function square(number) {
+    //     return number = number *number;
+    // }
+
+    // let y = 2;
+    // let result = square(y);
+    // console.log(result);
+    // console.log(y);
+
+    //===================
+    //TRUYỀN THAM CHIẾU (Passing by value of refernces values)
+
+    // function turnOn(machine) {
+    //     machine.isOn = true;
+    // };
+    // let computer = {
+    //     isOn: false
+    // }
+    // turnOn(computer);
+    // console.log(computer.isOn)
+
+    //// &&&&&&
+
+    // function turnOn(machine) {
+    //     machine = {
+    //         isOn : true
+    //     }
+    // }
+    // let computer = {
+    //     isOn : false
+    // }
+    // turnOn(computer);
+    // console.log(computer.isOn)
+
+
+</script>

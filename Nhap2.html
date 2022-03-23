@@ -2,40 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Title</title>
 </head>
-<body onload="fake()" style="text-align: center;">
-    <h2>Falking Textarea</h2>
-    <form>
-        <label>
-            <textarea cols="30" rows="5" id="'txt"></textarea>
-        </label>
-    </form>
-</body>
-</html>
+<body>
 <script>
 
-    let str = '';
-    let array = ['','T', 'Ô', 'I',' ', 
-                 'L', 'À', ' ', 
-                 'M', 'Ộ', 'T', ' ', 
-                 'T', 'H', 'Ằ', 'N', 'G', ' ', 
-                 'N', 'G', 'Ố', 'C', '!',
-             ];
-
-    function fake() {
-        let text = document.getElementById('txt').value;
-        for (i = 1; i<text.length; i++) {
-            str += array[i];
-            if (i==Number(array.length - 1)) {
-                str = '';
-            }
+    function processConfirm(answer) {
+        let result = "";
+        if (answer) {
+            result = "Excellent. We'll play a nice game of chess.";
+        } else {
+            result = "Maybe later then.";
         }
-        document.getElementById('txt').value = str;
-        str = '';
-        setTimeout('fake()', 1)
+        return result;
     }
-
+    
+    let confirmAnswer = confirm("Shall we play a game?");
+    let theAnswer = processConfirm(confirmAnswer);
+    alert(theAnswer);
+    
 </script>
+</body>
+</html>
