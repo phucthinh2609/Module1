@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Perimeter and Area of Circle</h2>
+    <label>Radius  <input type="number" id="input_radius" placeholder="radius"></label>
+
+
+    <input type="button" value='Perimeter' onclick="circlePerimeter()">
+    <input type="button" value="Area" onclick="circleArea()">
+
+    <br><br><hr>
+
+    <table>
+        <tr>
+            <td>Perimeter of circle is</td>
+            <td>:</td>
+            <td><span id="output_Perimeter"></span></td>
+        </tr>
+        <tr>
+            <td>Area of circle is</td>
+            <td>:</td>
+            <td><span id="output_Area"></span></td>
+        </tr>
+    </table>
+
+  
+    
+</body>
+</html>
+<script>
+
+    function square (number) {
+        return number*number;
+    }
+
+    function circlePerimeter(radius){
+        radius =  document.getElementById('input_radius').value;
+        document.getElementById('output_Perimeter').innerHTML = radius*2
+        // return radius*2
+    }
+
+    function circleArea(radius){
+        radius =  document.getElementById('input_radius').value;
+        document.getElementById('output_Area').innerHTML = (square(radius)*Math.PI).toFixed(2)
+        // return (square(radius)*Math.PI).toFixed(2)
+    }
+
+    // `${(square(radius)*Math.PI).toFixed(2)}`
+
+    // let radius = prompt('Enter a radius : ');
+    // let output_circlePerimeter = alert('Perimeter of circle is '+ circlePerimeter(radius))
+    // let output_circleArea = alert( 'Area of circle is ' + circleArea(radius))
+
+</script>
