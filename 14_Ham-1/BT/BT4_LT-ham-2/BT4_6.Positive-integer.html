@@ -12,17 +12,11 @@
 </html>
 <script>
 
-    function isNumber(number) {
-        if (typeof(number) == 'number') {
-            return true
-        }else{
-            return false
-        }
+    function isPositiveInteger (number) {
+        return (Number.isInteger(number) && number >0)
     }
 
-    let number = parseFloat(prompt('Enter a number : '));
-    let result = isNumber(number);
-    alert(result)
-
+    let number = Number(prompt('Enter a number : '));
+    alert(isPositiveInteger(number))
 
 </script>

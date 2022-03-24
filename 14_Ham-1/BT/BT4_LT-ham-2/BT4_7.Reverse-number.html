@@ -12,17 +12,15 @@
 </html>
 <script>
 
-    function isNumber(number) {
-        if (typeof(number) == 'number') {
-            return true
-        }else{
-            return false
-        }
+    function reserveArray(n1, n2) {
+        let array = [n1, n2];
+        return array.reverse()
     }
 
-    let number = parseFloat(prompt('Enter a number : '));
-    let result = isNumber(number);
-    alert(result)
-
+    let number1 = Number(prompt('Enter a number 1 : '));
+    let number2 = Number(prompt('Enter a number 2 : '));
+    
+    alert(reserveArray(number1, number2))
+    
 
 </script>
