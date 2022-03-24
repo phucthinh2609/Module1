@@ -12,7 +12,24 @@
 </html>
 <script>
 
-    let star = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let star_name = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
     let constellation = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo']
+
+    function findStar(star) {
+        for (i=0; i<star_name.length; i++) {
+            if (star_name[i] === star) {
+                for (j=0; j == i; j++) {
+                        return alert(constellation[i]);
+                }
+            }else{
+                alert('Try again!')
+                break;
+            }
+        }
+    }
+
+    let input_Star = prompt('Enter a name of star:  ');
+    let output_constellation = findStar(input_Star);
+    alert(output_constellation);
 
 </script>
