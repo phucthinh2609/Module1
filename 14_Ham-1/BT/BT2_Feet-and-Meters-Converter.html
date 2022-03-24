@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Foot and Meter Converter</h2>
+    <table>
+        <tr>
+            <td><label>Foot : </label></td>
+            <td><input type="number" id="input_Foot" placeholder="foot"
+                        oninput="footToMeter(this.value)"
+                        onchange="footToMeter(this.value)"
+            >
+        </tr>
+
+        <tr>
+            <td><label>Meter : </label></td>
+            <td><input type="number" id="input_Meter" placeholder="meter"
+                        oninput="meterToFoot(this.value)"
+                        onchange="meterToFoot(this.value)"
+            >
+        </tr>
+       
+    </table>
+    <hr>
+    <p>Meter = <label id="outputMeter"></label></p>
+    <p>Foot = <label id="outputFoot"></label></p>
+
+</body>
+</html>
+<script>
+
+    function footToMeter(foot) {
+        // let result = 0.305 * foot
+        // return result
+        foot = parseFloat(foot)
+        document.getElementById('outputMeter').innerHTML = 0.305 * foot
+    }
+
+    function meterToFoot(meter) {
+        // let result = 0.305 * foot
+        // return result
+        meter = parseFloat(meter)
+        document.getElementById('outputFoot').innerHTML = 3.279 * meter
+    }
+    
+
+
+    // let foot = 2;
+    // let resultMeter = footToMeter (foot);
+    // alert(resultMeter)
+
+    // let meter = 2;
+    // let resultFoot = meterToFoot (meter);
+    // alert(resultFoot)
+
+
+</script>
