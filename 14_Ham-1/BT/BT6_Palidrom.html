@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+    // function checkPalindrom(palindrom) {
+    //     for( var i = palindrom.length; i > 0; i-- ) {
+    //         if( palindrom[i] = palindrom.charAt(palindrom.length)-1 ) {
+    //             document.write('the word is palindrome.');
+    //         }else{
+    //             document.write('the word is not palindrome!');
+    //         }
+    //     }
+    // }
+
+    // checkPalindrom('rotor');
+
+    let str ='redder';
+    // console.log(str)
+    // let result = str.split('').reverse().join('');
+    // console.log(result);
+
+    function checkPalindrom (str) {
+        return str == str.split('').reverse().join('');
+    }
+
+    let result = checkPalindrom(str);
+    console.log(result)
+
+
+
+</script>
