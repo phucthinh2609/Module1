@@ -12,22 +12,31 @@
 </html>
 <script>
 
-    let arr_star = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
-    let arr_constellation = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo']
+    // let arr_star = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    // let arr_constellation = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo']
 
-    function findStar(input, arr1, arr2) {
-        for (i=0; i<arr1.length; i++) {
-            if (arr1[i] === input) {
-                    return alert(arr2[i]);
-                }
-        }
-        if (arr1[arr1.length - 1] !== input){
-                alert('Try again!')
-            }
+    // function findStar(input, arr1, arr2) {
+    //     for (i=0; i<arr1.length; i++) {
+    //         if (arr1[i] === input) {
+    //                 return alert(arr2[i]);
+    //             }
+    //     }
+    //     if (arr1[arr1.length - 1] !== input){
+    //             alert('Try again!')
+    //         }
+    // }
+
+    // let input_Star = prompt('Enter a name of star:  ');
+    // let output_constellation = findStar(input_Star, arr_star, arr_constellation);
+    // alert(output_constellation);
+
+    let number = String(prompt('Enter a value : '));
+
+    function checkNumber (number) {
+        return !isNaN(number)
     }
+    console.log(checkNumber(number))
 
-    let input_Star = prompt('Enter a name of star:  ');
-    let output_constellation = findStar(input_Star, arr_star, arr_constellation);
-    alert(output_constellation);
+
 
 </script>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // var student = {
+    //     id: 1,
+    //     name: 'Nguyen Van A',
+    //     Street: 'Nguyen Hue Street',
+    //     getInfor = function() {
+    //         return `Id = ${this.id}, Name = ${this.name}, Address = ${this.address}`
+    //     }
+    // }
+    // console.log(student)
+    // console.log(student.getInfor())
+
+    //=========
+
+    function student(id, name, address) {
+        this.id = id;
+        this.name = name;
+        this.address = address;
+        this.getInfor = function() {
+            return `Id = ${this.id}, Name = ${this.name}, Address = ${this.address}`
+        }
+    }
+    var student = new student(2, 'Nguyen Van A', 'Nguyen Hue Street');
+    console.log(student)
+    console.log(student.getInfor())
+
+    
+
+</script>
