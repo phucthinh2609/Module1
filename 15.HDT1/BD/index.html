@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+    // let person = {
+    //     name: ['Bob', 'Adrew'],
+    //     age: 32,
+    //     gender: 'male',
+    //     interests: ['music', 'swimming'],
+    //     bio: function() {
+    //         alert (`${this.name[0]} is ${this.age} years old. He likes ${interests[0]} and ${interests[1]} ` )
+    //     },
+    //     greeting: function () {
+    //         alert(`Hi! I'm ${this.name[0]}.`)
+    //     }
+    //     }
+    
+    // bio()
+    // greeting()
+
+    // console.log(person)
+
+    // person.age = 45;
+    // person['name']['last'] = 'John'
+
+    //==================
+
+    // let myDataName = 'height';
+    // let myDataValue = '1.75m';
+    // person[myDataName] = myDataValue;
+    // console.log(person.height)
+
+    //===================
+    
+    // let person1 = {
+        //     name: 'Chris',
+        //     age: 23,
+        //     greeting: function() {
+            //         alert(`Hi I'm ${this.age}.`)
+            //     }
+            // }
+            // person1.age=24;
+            // console.log(person1.greeting())
+            
+            
+    //=Cach 1: ==================
+
+    // function Apple (type) {
+    //     this.type = type;
+    //     this.color = "red";
+    //     this.getInfo =  function() {
+    //     return `${this.type} ${this.color} apple`
+    //     };
+    // }
+
+    // let apple = new Apple('macintosh');
+    // apple.color = "reddish";
+    // alert(apple.getInfo());
+    // console.log(apple)
+
+
+    //=Cach 2: ==================
+
+
+    // function Apple (type) {
+    //     this.type = type;
+    //     this.color = 'red';
+    // }
+    // Apple.prototype.getInfor = function() {
+    //     return `${this.type} is ${this.color} apple.`
+    // };
+
+    // let apple = new Apple('macintosh');
+    // alert(apple.getInfor())
+
+    //=Cach 3: ==================
+
+    let apple = new function() {
+        this.type = "macintosh";
+        this.color = 'red';
+        this.getInfor = function() {
+            return `${this.type} is ${this.color} apple`
+        }
+    }
+
+    alert(apple.getInfor())
+
+
+
+</script>
