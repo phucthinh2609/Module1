@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="200px" height="300px" style="border: 1px solid #d3d3d3;"></canvas>
+    <p>Area of Rectangle is:<label id="area"> </label></p>
+    <p>Perimeter of Rectangle is:<label id="perimeter"> </label></p>
+</body>
+</html>
+<script>
+    
+    function Rectangle(length, width) {
+        this.length = length
+        this.width = width
+        this.getPerimeter = function() {
+            return (length+width)*2;
+        }
+        this.getArea = function() {
+            return length*width;
+        }
+    }
+
+    function createRectangle(length,width) {
+        var ctx = document.getElementById("myCanvas").getContext("2d");
+        var rectangle = new Rectangle(length,width) 
+        var length = rectangle.length;
+        var width = rectangle.width;
+        var perimeter = rectangle.getPerimeter();
+        var area = rectangle.getArea();
+        document.getElementById('perimeter').innerText = ' ' + perimeter
+        document.getElementById('area').innerText = ' '+ area
+        ctx.fillRect(20, 20, width, length);
+    }
+
+
+    createRectangle(100,200)
+
+    
+    
+
+</script>
