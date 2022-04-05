@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    
+</body>
+</html>
+
+<script>
+
+    class Staff{
+        constructor(id, fullname,age, dob) {
+            this.id = id;
+            this.fullname = fullname;
+            this.age = age;
+            this.dob = dob
+        }
+        greeting () {
+            return `My name is ${this.fullname}`
+        }
+    }
+
+    // let Manager = {...Staff} 
+    class Manager extends Staff{
+        constructor(id, fullname,age, dob, title) {
+            super(id, fullname,age, dob);
+            this.title = title;
+        }
+        greeting() {
+            // return `${super.greeting()}. I'm ${this.title}`
+            return `My name is ${this.fullname}. I'm ${this.title}`
+        }
+        // static rule() {
+        rule() {
+            return `Sill breath, still alive`
+        }
+    }
+
+    Manager.prototype.getTitle = function() {
+        return this.title
+    }
+
+    let thinh = new Manager(1,'thinh', 23, '1999', 'Master')
+    // console.log(thinh.greeting())
+    // console.log(thinh.rule())
+    // console.log(thinh.getTitle())
+
+
+    //Truy cap vao mot ham co san (nhu Array)
+
+    // if (Array.prototype.sum != function() {
+    //     Array.prototype.sum = function() {
+    //         let total = 0;
+    //         for(i=0; i<this.length; i++) {
+    //             total += this[i]
+    //         }
+    //         return total
+    //     }
+    // }
+
+    // let numbers = [1,2,3,4];
+    // console.log(numbers.sum())
+
+
+        if(Array.prototype.indexOf2 != `function`) {
+            Array.prototype.indexOf2 = function() {
+                for (i=0; i<this.length; i++) {
+                    if(this[i]==2){
+                        return i
+                    }
+                }
+                return -1
+            }
+        }
+
+        let arr = [2,3,4,5,5]
+        let arr2 = [3,4,5,5]
+        console.log(arr.indexOf2())
+        console.log(arr2.indexOf2())
+
+
+
+</script>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            margin: 0;
+            border: 0;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: initial;
+        }
+        li {
+            font-weight: bold;
+            color: black;
+        }
+
+        div {
+            border: 1px soild black;
+            border-collapse: collapse;
+            background-color: rgb(159, 230, 174);
+            width: 150px;
+            padding: 3px;
+            margin: 10px;
+            display: block;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        body {
+            display: flex;
+        }
+
+        button {
+            border: 0;
+            outline: 0;
+            background-color: rgb(19, 121, 28);
+            color: white;
+            border-radius: 5px;
+            padding: 5px;
+            position: relative;
+            left: 50px;
+            
+           
+        }
+    </style>
+</head>
+<body>    
+    
+</body>
+</html>
+
+<script> 
+
+    // let thinh = {
+    //     id: "1",
+    //     name: 'Phuc Thinh',
+    //     gender : true,
+    //     dbob : "26/09/199",
+    //     hobies: ['piano', 'guitar', 'travel'],
+    //     phone: "0787626102",
+    //     getHobbies: function() {
+    //         return this.hobies.map(function(hoby){
+    //             return hoby.toUpperCase()
+    //         })
+    //     },
+    //     getPhone: function() {
+    //         return phone.substring(0, )
+    //     } 
+        
+    // }
+
+    // function Student(name, gender, dob) {
+    //     this.name = name,
+    //     this.gender = gender,
+    //     this.dob = dob
+    // }
+
+    // let students = [
+    //     new Student ('Thinh', true, '26/09/1999'),
+    //     new Student ('Hoan', true, '26/09/1999'),
+    //     new Student ('Thien', true, '28/09/2000'),    
+    // ]
+
+    // for (let student of students) {
+    //     for(let student of students) {
+    //         let exitThinh = false
+    //         if (student.name == "Thinh") {
+    //             exitThinh = true
+    //             break;
+    //     }
+    //     }
+    // }
+    // console.log(`${exitThinh}? Yes: No`)
+
+
+    function Product(name, id, price, amount) {
+        this.name = name,
+        this.id = id,
+        this.price = price,
+        this.amount = amount
+    }
+
+//    let product = new Product('Iphone6', 001, 1000, 1)
+//    console.log(product)
+
+    let products = [
+        new Product('Iphone6', 001, 1000, 1),
+        new Product('Iphone7', 002, 2000, 14),
+        new Product('Iphone8', 003, 3000, 10),
+        new Product('IphoneX', 004, 3500, 2),
+        new Product('Iphone13', 005, 4000, 7),
+    ]
+
+    // let htmls = products.map(function(pro){
+    //     return `
+    //         <tr>
+    //             <td>${pro.name}</td>
+    //             <td>${pro.id}</td>
+    //             <td>${pro.price}</td>
+    //             <td>${pro.amount}</td>
+    //         </tr>
+    //             `
+    // })
+
+    // document.write(`<table border= 1px><tbody>${htmls.join('')}</tbody></table>`)
+    
+    let htmls = products.map(function(pro){
+        return `
+                <div>
+                <ul>
+                    <li>Name : <a href="#">${pro.name}</a></li>
+                    <li>Id : <a href="#">${pro.id}</a></li>
+                    <li>Price : <a href="#">${pro.price}</a></li>
+                    <li>Amount : <a href="#">${pro.amount}</a></li>
+                </ul>
+                <button>Create</button>
+                </div>
+                `
+    })
+
+    document.write(`${htmls.join('')}`)
+    
+
+</script>

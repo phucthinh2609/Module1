@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="month" value="1">
+    <button onclick="showValueDayofMonth()">Show Day</button>
+    <p id="show-Day"></p>
+
+
+    <script>
+        function showValueDayofMonth() {
+            let valueMonth = document.querySelector('input').value
+            let showDay = document.getElementById('show-Day')
+            if(valueMonth > 0 && valueMonth <= 7) {
+                if (valueMonth == 2) {
+                    return showDay.innerText = 'Thang 2 co 28 hoac 29 ngay'
+                }
+                if (valueMonth %2 == 0) {
+                    return showDay.innerText = `Thang ${valueMonth} co 30 ngay`
+                }
+                if (valueMonth %2 !=0) {
+                    return showDay.innerText = `Thang ${valueMonth} co 31 ngay`
+                }
+            }
+            if(valueMonth > 7 && valueMonth <= 12) {
+                if (valueMonth %2 == 0) {
+                    return showDay.innerText = `Thang ${valueMonth} co 31 ngay`
+                }
+                if (valueMonth %2 !=0) {
+                    return showDay.innerText = `Thang ${valueMonth} co 30 ngay`
+                }
+            }
+            return alert('Month value is undefine. Please try again!')
+        }
+    </script>
+</body>
+</html>

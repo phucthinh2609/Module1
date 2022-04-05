@@ -12,8 +12,21 @@
 </html>
 <script>
 
-    function Temperature() {
+    function Temperature(celsius) {
+        this.celsius = celsius
+        this.celsiusToFahrenheit = function (celsius) {
+            let result = (celsius-32)/1.8
+            return alert(`T(F) = ${result}`)
+        }
+        // this.celsiusToKenvin = function (celsius) {
+        //     let result = celsius + 273.15
+        //     return alert(`T(K) = ${result}`)
+        // }
+        }
 
-    }
+    // let temperature = function Temperature(2) 
+    function Temperature(2)
+
+    
 
 </script>
